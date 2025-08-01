@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      
+
       - name: Vet
         run: |
           go vet ./...
@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: ilyashepelevv/sprint12
+          images: vallensia/12
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
